@@ -33,6 +33,7 @@ public interface Rule {
      * @param count   tokens needed.
      * @param args    arguments of the original invocation.
      * @return If current statistical indicators not exceeding any threshold return true, otherwise return false.
+     * 如果当前统计指标不超过任何阈值，则返回 true，否则返回 false。
      */
     boolean passCheck(Context context, DefaultNode node, int count, Object... args);
 
